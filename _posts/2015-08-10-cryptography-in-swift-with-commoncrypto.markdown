@@ -21,7 +21,7 @@ tags:
 > 定稿：[shanks](http://codebuild.me)
 
 
-![](http://swift.gg/img/articles/commoncrypto-in-swift/34909577.jpg)
+![](/img/cryptography-in-swift-with-commoncrypto-pic1.jpg)
 
 现在，许多开发者已经不需要在 App 中进行加密处理。即使你在远程服务器上使用了 REST API，通常情况下使用 HTTPS 就可以解决大多数的安全通信问题，剩下的问题可以使用苹果提供的“保护模式”和硬件/软件加密组合方式来解决。然而在很多情况下，你还是需要对通信或文件进行加密。也许你正在把一个现有的涉及到文件/信息加密的方案移植到 iOS 上，也许你在制作一个保密性要求极高的App，或者你只是想提高数据的安全级别（这是一件好事）。
 
