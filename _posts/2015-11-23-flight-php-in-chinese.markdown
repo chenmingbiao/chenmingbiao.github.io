@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "Flightphp中文版教程"
+subtitle:   "Flightphp in chinese"
+date:       2015-11-23
+author:     "CMB"
+tags:
+    - Flight
+    - php
+    - 翻译
+---
+
 # Flight是什么？
 
 Flight是一个快速，简易，可扩展的PHP框架。Flight能使你快速和轻松地创建RESTful Web应用。
@@ -758,7 +770,7 @@ Flight::jsonp(array('id' => 123), 'q');
 
 所以，当使用`?q=my_func`构造一个GET请求时，你应该会收到这样的输出：
 
-```
+```php
 my_func({"id":123});
 ```
 
@@ -786,7 +798,7 @@ Flight框架被设计成易于使用和易于理解的。下面就是这个框�
 
 ## 核心方法
 
-```
+```php
 Flight::map($name, $callback) // 创建一个自定的框架方法
 Flight::register($name, $class, [$params], [$callback]) //将一个类注册成框架方法
 Flight::before($name, $callback) // 添加框架方法的前置过滤器
@@ -802,7 +814,7 @@ Flight::app() // 获取整个应用对象的实例
 
 ## 扩展方法
 
-```
+```php
 Flight::start() // 开启框架（接收响应开始工作）
 Flight::stop() // 框架停止并且发送返回响应
 Flight::halt([$code], [$message]) // 停止框架并返回一个可选的http状态码和信息
