@@ -524,19 +524,19 @@ Flight::render('layout', array('title' => 'Home Page'));
 
 `header.php`:
 
-```php
+```
 <h1><?php echo $heading; ?></h1>
 ```
 
 `body.php`:
 
-```php
+```
 <div><?php echo $body; ?></div>
 ```
 
 `layout.php`:
 
-```php
+```
 <html>
 <head>
 <title><?php echo $title; ?></title>
@@ -549,7 +549,8 @@ Flight::render('layout', array('title' => 'Home Page'));
 ```
 
 输出会是：
-```php
+
+```
 <html>
 <head>
 <title>Home Page</title>
