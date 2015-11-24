@@ -549,7 +549,7 @@ Flight::render('layout', array('title' => 'Home Page'));
 ```
 
 输出会是：
-```html
+```php
 <html>
 <head>
 <title>Home Page</title>
