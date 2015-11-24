@@ -3,7 +3,7 @@ layout:     post
 title:      "Flightphp中文版教程"
 subtitle:   "Flightphp in chinese"
 date:       2015-11-23
-header-img: "img/post-bg-rwd.jpg"
+header-img: "img/post-bg-blue-green.jpg"
 author:     "CMB"
 tags:
     - Flight

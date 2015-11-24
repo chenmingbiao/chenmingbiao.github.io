@@ -3,6 +3,7 @@ layout:     post
 title:      "捕获上下文信息"
 subtitle:   "Capturing Context Swiftlang"
 date:       2015-11-16
+header-img: "img/post-bg-rwd.jpg"
 author:     "CMB"
 tags:
     - iOS
