@@ -3,6 +3,7 @@ layout:     post
 title:      "Xcode6 中模版的介绍"
 subtitle:   "Templates in Xcode 6"
 date:       2015-10-14
+header-img: "img/post-bg-e2e-ux.jpg"
 author:     "CMB"
 tags:
     - iOS
