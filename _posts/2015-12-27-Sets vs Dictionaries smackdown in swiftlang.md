@@ -1,17 +1,17 @@
-title: "在Swift语言中集合与字典的角逐"
-date: TODO
-tags: [ ]
-categories: [Swift 进阶]
-permalink: Sets_vs_Dictionaries_smackdown_in_swiftlang
-
 ---
-原文链接=http://ericasadun.com/2015/10/19/sets-vs-dictionaries-smackdown-in-swiftlang/
-作者=Erica Sadun
-原文日期=2015/10/19
-译者=CMB
-校对=
-定稿=
-发布时间=
+layout:     post
+title:      "在Swift语言中集合与字典的角逐"
+subtitle:   "Sets_vs_Dictionaries_smackdown_in_swiftlang"
+date:       2015-12-27
+header-img: "img/post-bg-miui6.jpg"
+author:     "CMB"
+tags:
+    - iOS
+    - Swift
+    - 翻译
+---
+> 作者：Erica Sadun，[原文链接](http://ericasadun.com/2015/10/19/sets-vs-dictionaries-smackdown-in-swiftlang/)，原文日期：2015-10-19
+> 译者：[CMB](https://github.com/chenmingbiao)；校对：[xxx]()；定稿：[xxx]()
 
 <!--此处开始正文-->
 
