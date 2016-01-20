@@ -3,7 +3,7 @@ layout:     post
 title:      "Swift 中集合与字典的角逐"
 subtitle:   "Sets_vs_Dictionaries_smackdown_in_swiftlang"
 date:       2015-12-27
-header-img: "img/post-bg-miui6.jpg"
+header-img: "img/bg6.jpg"
 author:     "CMB"
 tags:
     - iOS

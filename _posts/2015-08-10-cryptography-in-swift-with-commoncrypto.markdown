@@ -3,7 +3,7 @@ layout:     post
 title:      "如何在 Swift 中使用 CommonCrypto 类进行加密"
 subtitle:   "Cryptography in Swift with CommonCrypto"
 date:       2015-08-10
-header-img: "img/post-bg-miui6.jpg"
+header-img: "img/bg5.jpg"
 author:     "CMB"
 tags:
     - iOS
