@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      "更加 Swift 化的 Collection View 和 Table View Cells"
-subtitle:   "想知道Swift化tableView和collectionView是什么样子的吗，只要用使用枚举的case情况做标识就能搞定哦。"
+subtitle:   "Being-Swifty-With-Collection-View-And-Table-View-Cells"
 date:       2015-12-27
-header-img: "img/bg8.jpg"
+header-img: "img/bg11.jpg"
 author:     "CMB"
 tags:
     - iOS
