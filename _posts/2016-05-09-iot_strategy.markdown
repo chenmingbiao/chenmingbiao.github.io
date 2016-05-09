@@ -3,7 +3,7 @@ layout:     post
 title:      "聊聊「物联网云平台IoT」—— 行业与战略"
 subtitle:   "聊聊物联网云平台行业与老东家的产品思路"
 date:       2016-05-09
-header-img: "img/bg12.jpg"
+header-img: "img/bg14.jpg"
 author:     "CMB"
 tags:
     - 产品设计
