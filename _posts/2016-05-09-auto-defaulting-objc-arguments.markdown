@@ -3,7 +3,7 @@ layout:     post
 title:      "Swift 3.0 的自动默认（auto-defaulting）实参"
 subtitle:   "Swift 3 中允许了导入 APIs 来定义很多实参，所以在 Swift 中调用时，你可以省略一些参数的定义"
 date:       2016-05-09
-header-img: "img/bg11.jpg"
+header-img: "img/bg_adidas.jpg"
 author:     "CMB"
 tags:
     - iOS
