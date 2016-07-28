@@ -2,7 +2,7 @@
 layout:     post
 title:      "iOS 性能调优"
 subtitle:   "ios-performance-optimization"
-date:       2016-06-23
+date:       2016-06-02
 header-img: "img/bg15.jpg"
 author:     "CMB"
 tags:
@@ -47,4 +47,4 @@ tags:
 
 `CALayer` 的 `border` 、圆角、阴影、遮罩（mask），`CASharpLayer` 的矢量图形显示，通常会触发离屏渲染（offscreen rendering），而离屏渲染通常发生在 `GPU` 中。当一个列表视图中出现大量圆角的 `CALayer`，并且快速滑动时，可以观察到 `GPU` 资源已经占满，而 `CPU` 资源消耗很少。这时界面仍然能正常滑动，但平均帧数会降到很低。为了避免这种情况，可以尝试开启 `CALayer.shouldRasterize` 属性，但这会把原本离屏渲染的操作转嫁到 `CPU` 上去。对于只需要圆角的某些场合，也可以用一张已经绘制好的圆角图片覆盖到原本视图上面来模拟相同的视觉效果。最彻底的解决办法，就是把需要显示的图形在后台线程绘制为图片，避免使用圆角、阴影、遮罩等属性。可以考虑用画图的方式截取圆角。
 
-比较高效的开源库有 `AsyncDisplayKit` ，拥有高效的异步绘制和渲染能力，最后，用 `Instuments` 的 `GPU Driver` 预设，能够实时查看到 `CPU` 和 `GPU` 的资源消耗。在这个预设内，你能查看到几乎所有与显示有关的数据，比如 `Texture` 数量、`CA` 提交的频率、`GPU` 消耗等，在定位界面卡顿的问题时，这是最好的工具。如果界面出现不明卡顿，可以监听主线程的 `runloop`，监控到了卡顿现场, `PLCrashReporter` ,它不仅可以收集 `Crash` 信息也可用于实时获取各线程的调用堆栈 `(http://www.tanhao.me/code/151113.html/)`
+比较高效的开源库有 `AsyncDisplayKit` ，拥有高效的异步绘制和渲染能力，最后，用 `Instuments` 的 `GPU Driver` 预设，能够实时查看到 `CPU` 和 `GPU` 的资源消耗。在这个预设内，你能查看到几乎所有与显示有关的数据，比如 `Texture` 数量、`CA` 提交的频率、`GPU` 消耗等，在定位界面卡顿的问题时，这是最好的工具。如果界面出现不明卡顿，可以监听主线程的 `runloop`，监控到了卡顿现场, `PLCrashReporter` ,它不仅可以收集 `Crash` 信息也可用于实时获取各线程的调用堆栈。
