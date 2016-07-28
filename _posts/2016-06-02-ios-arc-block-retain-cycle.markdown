@@ -2,7 +2,7 @@
 layout:     post
 title:      "iOS 中 ARC 下 block 的循环引用"
 subtitle:   "ios-arc-block-retain-cycle"
-date:       2016-06-02
+date:       2016-03-02
 header-img: "img/bg15.jpg"
 author:     "CMB"
 tags:
