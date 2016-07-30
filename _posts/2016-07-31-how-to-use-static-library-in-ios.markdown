@@ -35,11 +35,11 @@ tags:
 
 ### 如何生成和使用静态链接库
 
-1. 新建项目，选择 `Framework & Library` , 再选择 `Cocoa Touch Static Library` ，点确定。
+#### 新建项目，选择 `Framework & Library` , 再选择 `Cocoa Touch Static Library` ，点确定。
 
 ![](/img/how-to-use-static-library-in-ios-1.png)
 
-2. 我建一个叫 `BCTestLib` 的项目，然后编写我们的代码
+#### 我建一个叫 `BCTestLib` 的项目，然后编写我们的代码
 
 `BCTestLib.h` :
 
@@ -65,7 +65,7 @@ tags:
 @end
 ```
 
-3. 然后创建一个 `Category`（等下你就知道为什么我要创建`Category`），我创建了一个叫 `BCSayBye` 的分类，代码如下：
+#### 然后创建一个 `Category`（等下你就知道为什么我要创建`Category`），我创建了一个叫 `BCSayBye` 的分类，代码如下：
 
 `BCTestLib+BCSayBye.h` :
 
@@ -91,7 +91,7 @@ tags:
 @end
 ```
 
-4. 添加自己的类和 `category`
+#### 添加自己的类和 `category`
 
 编译的时候需要将头文件拷贝到生成的库路径下，这里的头文件是用于给外部使用的，一般是把库里面的文件放在一个头文件中引用，这样外部在使用的时候直接引用该头文件即可
 
@@ -99,7 +99,7 @@ tags:
 
 > 在 `Copy Files` 默认是不会添加 `category` 的头文件，所以需要我们手动去操作
 
-5. 设置支持的最低版本和最高版本
+#### 设置支持的最低版本和最高版本
 
 (1) `Base SDK`：是当前类库是基于哪个版本的SDK开发的，也就是最高支持的SDK
 
@@ -109,13 +109,13 @@ tags:
 
 ![](/img/how-to-use-static-library-in-ios-4.png)
 
-5. 配置编译选项
+#### 配置编译选项
 
-　　由于我们编译的是类库，在使用的时候需要支持Debug和Release两种模式下，需要编译所有的 `architecture` 版本
+由于我们编译的是类库，在使用的时候需要支持Debug和Release两种模式下，需要编译所有的 `architecture` 版本
 　　
 ![](/img/how-to-use-static-library-in-ios-5.png)
 
-6. 编译（Cmd + B）
+#### 编译（Cmd + B）
 
 我们分别切换到模拟器和真机模式进行编译，在真机模式下编译完成后， `Products` 中的文件会变正常（原来为红色）　　　
 
@@ -127,13 +127,13 @@ tags:
 
 ![](/img/how-to-use-static-library-in-ios-8.png)
 
-7. 编译完成
+#### 编译完成
 
 `libBCTestLib.a` 右键，`Show in Finder` 就能看到我们编译好的静态库
 
 ![](/img/how-to-use-static-library-in-ios-9.png)
 
-8. 合并 `.a` 文件(可跳过)
+#### 合并 `.a` 文件(可跳过)
 
 上面看到，编译后的用于模拟器的静态库和用于真机的静态库不一样，每次切换的适合都得重新引用 `.a` 文件，这样显得特别麻烦，苹果提供了一个合并多个 `.a` 文件的方法，合并后的 `.a` 文件真机和模拟器都支持（合并后大小为原来两个文件大小之和）
 
@@ -143,7 +143,7 @@ tags:
 
 还有一种方法可以动态的引用静态库，就是通过配置工程的库引用路径和编译标示，编译的适合 `Xcode` 会根据当前的环境自动找到相关的 `.a` 库。
 
-9. 使用
+#### 使用
 
 我们创建一个iOS项目，吧相关的 `.a` 文件和 `.h` 文件拖到我们的项目中，拖入后，`Xcode` 会自动把静态库添加到工程
 
@@ -175,7 +175,7 @@ tags:
 
 引用自 [xcode中引入静态库文件方法](http://blog.csdn.net/zhangkongzhongyun/article/details/8047500)
 
-10. 运行
+#### 运行
 
 代码如下：
 
