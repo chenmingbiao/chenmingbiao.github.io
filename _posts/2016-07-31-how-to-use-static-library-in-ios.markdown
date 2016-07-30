@@ -3,7 +3,7 @@ layout:     post
 title:      "iOS 中静态链接库的使用"
 subtitle:   "how-to-use-static-library-in-ios"
 date:       2016-07-31
-header-img: "img/bg8.jpg"
+header-img: "img/bg16.jpg"
 author:     "CMB"
 tags:
     - iOS
