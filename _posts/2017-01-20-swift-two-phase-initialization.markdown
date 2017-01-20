@@ -59,10 +59,10 @@ class Man: Person {
     var sex: String!
      
     init(sex: String, height: Double, weight: Double) {
-        // print(super.name) 不能再父类初始化之前调用父类中的属性
+        // print(super.height) 不能再父类初始化之前调用父类中的属性
         super.init(height: height, weight: weight)
-        super.name = "cmb"
-        print(self.name)
+        super.height = 178
+        print(self.height)
         // print(self.sex) 不能在本类中的属性没有进行初始化的时候进行调用
         // 会出现:fatal error: unexpectedly found nil while unwrapping an Optional value错误
         self.sex = sex
@@ -72,8 +72,8 @@ class Man: Person {
     convenience init(s sex: String, h height: Double, weight: Double) {
          
         // 在调用其他构造器之前, 不能访问或修改任何实例存储属性
-        // print(self.name) 错误
-        // super.name = name 错误
+        // print(self.height) 错误
+        // super.height = height 错误
         self.init(sex: sex, height: height, weight: weight)
     }
 }
