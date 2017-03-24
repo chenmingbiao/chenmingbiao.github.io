@@ -2,7 +2,7 @@
 layout:     post
 title:      "iOS 多媒体－音乐"
 subtitle:   "ios-media-avaudioplayer"
-date:       2017-03-23
+date:       2017-03-24
 header-img: "img/bg19.jpg"
 author:     "CMB"
 tags:
