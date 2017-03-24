@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 多媒体－音效"
-subtitle:   "ios-media-AudioToolbox"
+subtitle:   "ios-media-audiotoolbox"
 date:       2017-03-23
 header-img: "img/bg19.jpg"
 author:     "CMB"
@@ -62,4 +62,4 @@ CFRunLoopRef inRunLoop, CFStringRef inRunLoopMode, AudioServicesSystemSoundCompl
 
 ## 参考
 
-* http://www.cnblogs.com/sunminmin/p/4475710.html
+* [笔谈AudioToolbox](http://www.cnblogs.com/sunminmin/p/4475710.html)
