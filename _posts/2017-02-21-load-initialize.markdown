@@ -13,9 +13,9 @@ tags:
 
 ## load
 
-load 会在类或分类被添加到runtime时调用。并且只会被runtime调用一次。
+`load` 会在类或分类被添加到 `runtime` 时调用。并且只会被 `runtime` 调用一次。
 
-如果子类没有实现，父类的load方法也不会被再次调用。
+如果子类没有实现，父类的 `load` 方法也不会被再次调用。
 
 ### load 的调用顺序
 
@@ -31,9 +31,9 @@ load 会在类或分类被添加到runtime时调用。并且只会被runtime调�
 
 ## initialize
 
-initialize 会在类被使用前调用。包括类方法。
+`initialize` 会在类被使用前调用。包括类方法。
 
-比如下面的代码。在load内调用[self class]会导致initialize被调用。
+比如下面的代码。在 `load` 内调用 `[self class]` 会导致 `initialize` 被调用。
 
 ```objc
 + (void)load
@@ -47,11 +47,11 @@ initialize 会在类被使用前调用。包括类方法。
 }
 ```
 
-每个类都会被runtime线程安全的调用一次initialize方法。
+每个类都会被 `runtime` 线程安全的调用一次 `initialize` 方法。
 
 父类会在子类前被调用。
 
-如果子类没有实现或者调用[super initialize]，则父类会被再次调用。
+如果子类没有实现或者调用 `[super initialize]` ，则父类会被再次调用。
 
 下面的代码可以保证只执行一次初始化操作：
 
