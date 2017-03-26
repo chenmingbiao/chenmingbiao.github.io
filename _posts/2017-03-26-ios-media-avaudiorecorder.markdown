@@ -16,7 +16,7 @@ tags:
 
 ### 介绍
 
-前面几篇文章都是跟音频播放相关的，其实在 `AVFoundation` 中还有一个类平时我们也用得不少，为什么这样说呢，因为我们会在微信中经常会用到语言聊天，它就是使用 `AVAudioRecorder` 来实现的，所以这次就来分析一波 `AVAudioRecorder` 吧。
+`AVFoundation` 中使用 `AVAudioPlayer` 实现音频播放功能是非常简单的。同样在 `AVAudioRecorder` 实现音频录制功能也是非常简单的。`AVAudioRecorder` 同其用于播放音频一样，构建于 `Audio Queue Services` 之上，是一个功能强大且代码简单易用的 `Objective-C` 接口。我们可以在 `Mac` 机器和 `iOS` 设备上使用这个类来从内置的麦克风录制音频，也可从外部音频设备进行录制，比如数字音频接口或USB麦克风等。
 
 ### AVAudioRecorder
 
