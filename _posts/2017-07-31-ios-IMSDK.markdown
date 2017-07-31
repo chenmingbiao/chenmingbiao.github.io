@@ -3,7 +3,7 @@ layout:     post
 title:      "浅谈 IM SDK"
 subtitle:   "IM SDK"
 date:       2017-07-31
-header-img: "img/bg19.jpg"
+header-img: "img/bg16.jpg"
 author:     "CMB"
 tags:
     - iOS
@@ -12,19 +12,19 @@ tags:
 
 ---
 
-由于公司内部开始做社区化，所以对 IM 的需求开始加大了，IM SDK 组件开发迫在眉睫。
+由于公司内部开始做社区化，所以对 `IM` 的需求开始加大了，`IM SDK` 组件开发迫在眉睫。
 
 ### `IM` 总体结构：
 
 ![](https://ws4.sinaimg.cn/large/006tNc79gy1fi289put33j30in09yjrx.jpg)
 
-`V0.1` 版本的接入协议，将用户信息、好友关系、群组关系这些强业务相关数据留给业务方来维护，通用 `IM` 不对这些数据做存储和同步，在这一版本中重点解决消息下发的痛点。
+通用 `IM` 将用户信息、好友关系、群组关系这些强业务相关数据留给业务方来维护，通用 `IM` 不对这些数据做存储和同步。
 
-* 消息上行：
+#### 消息上行：
 
 上行消息通过 `App Server` 处理后，再由业务 `App Server` 调用 `IM Server` 的服务端接口，将上行消息发送出去；由 `App Server` 来进行关系链、用户封禁、禁言等的业务权限控制检查。
 
-* 消息下行：
+#### 消息下行：
 
 下行消息通过 `IM Server` 来进行推送，若接收方在线，则通过保持的长连接将消息推送给在线客户端；若接收方不在线，则根据是否需要离线推送提醒由 `IM Server` 调用统一推送系统进行离线 `Push` 通知。
 
@@ -49,7 +49,7 @@ tags:
 #### 当前的重连策略为：
 
 1. 每次重连时间点随机，这样规避了瞬间大流量的请求；
-2. 参考iOS系统TCP超时重传的积极策略，以适应移动网络的不稳定特征；
+2. 参考 `iOS` 系统 `TCP` 超时重传的积极策略，以适应移动网络的不稳定特征；
 3. 定义了若干个重连的级别，第一次重连在 `(0-1]` 秒随机，第二次重连 `(1-2]` 秒随机，第三次 `(2-4]` 秒随机，第四次 `(4,16]` ，最大是达到 `(16-32]` 。
 
 > 其实就这个级别： (0-1]、(1-2]、(2-4]、(4-8]、(8-16]、(16-32] 🤠
@@ -58,7 +58,7 @@ tags:
 
 #### 长连接保活
 
-* TCP提供的 `KeepAlive` 机制
+##### TCP提供的 `KeepAlive` 机制
 
 TCP有个KeepAlive开关，打开后可以用来检测死连接。通常默认是 `2` 小时，支持用户设置，但KeepAlive是TCP的全局设置。假如为了能更及时的检测出断开的连接，把 `tcp_keepalive_time` 和 `tcp_keepalive_intvl` 的时间改小（参考：`Using TCP keepalive under Linux` ），该机器上所有应用程序的 `KeepAlive` 检测间隔都会变小，显然是不能接受的。因为不同应用程序的需求是不一样的。最主要的原因是部分复杂情况下 `KeepAlive`  会失效，如路由器挂掉，网络直接被拔除。
 
@@ -66,7 +66,7 @@ TCP有个KeepAlive开关，打开后可以用来检测死连接。通常默认�
 
 `KeepAlive` 本质上来说，是用来检测长时间不活跃的连接的。所以，不适合用来及时检测连接的状态。
 
-* 心跳包（ `HeartBeat` ）
+##### 心跳包（ `HeartBeat` ）
 
 心跳包就是用来及时检测是否断线以及维持客户端和服务端长连接有效性的一种机制，通过每间隔一定时间发送心跳数据，来检测套接字是否有效。是属于应用程序协议的一部分。
 
@@ -148,9 +148,10 @@ TCP有个KeepAlive开关，打开后可以用来检测死连接。通常默认�
 
 因为失败有可能是暂态的，所以设置多次失败才算真正意义上的失败，但是成功是一次肯定。
 
-##### 大致流程
+#### 大致流程
 
-a) 变量说明：<br>
+a) 变量说明：
+
 [MinHeart，MaxHeart] —— 心跳可选区间<br>
 currentHeart —— 当前心跳初始值为 `successHeart`<br>
 heartStep —— 心跳增加步长，值为 `MaxHeart` 的 `10%`<br>
@@ -204,7 +205,6 @@ NAT超时为(`NAT`): `60`<br>
 由于 `NAT` 超时是动态变化的，我们可以用最大值探测，动态查找最小的失败值，更加真实逼近`NAT` 超时时间。
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fi33fxkagfj30ig0c2mxq.jpg)
 
-
 ### 参考文献
 
 1. [Android微信智能心跳方案](https://mp.weixin.qq.com/s/ghnmC8709DvnhieQhkLJpA)<br>
@@ -214,11 +214,7 @@ NAT超时为(`NAT`): `60`<br>
 5. [LeanCloud 实时通讯SDK文档](https://leancloud.cn/docs/realtime_guide-objc.html)<br>
 6. [融云开发文档](http://www.rongcloud.cn/docs/)
 
-  
-
 好吧，先说这么多吧🙄，hoho~!! <br>
 感谢 [Sai(嘉蓉)](http://www.saitjr.com/) 帮忙画的图
 
-<center>
 ![](http://img2.imgtn.bdimg.com/it/u=2065604431,45459169&fm=26&gp=0.jpg)
-</center>
