@@ -20,7 +20,7 @@ tags:
 
 1.设置后台运行模式：在 `plist` 文件中添加 `Required background modes` ，并且设置 `item 0=App plays audio or streams audio/video using AirPlay`（其实可以直接通过 Xcode 在 `Project Targets-Capabilities-Background Modes` 中设置）
 
-![](http://images.cnitblog.com/blog/62046/201412/260913004838643.png)
+![](https://camo.githubusercontent.com/0072dfffc0a67f95c644275d196bf7f9b9bb15a6/687474703a2f2f696d616765732e636e6974626c6f672e636f6d2f626c6f672f36323034362f3230313431322f3236303931333030343833383634332e706e67)
 
 2.设置 `AVAudioSession` 的类型为 `AVAudioSessionCategoryPlayback` 并且调用 `setActive::` 方法启动会话。
 
