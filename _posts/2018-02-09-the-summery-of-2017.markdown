@@ -3,7 +3,7 @@ layout:     post
 title:      "再见二零一七"
 subtitle:   "the summery of 2017"
 date:       2018-02-09
-header-img: "img/bg20.jpg"
+header-img: "img/home-bg-art.jpg"
 author:     "CMB"
 tags:
     - Summery
