@@ -1,6 +1,6 @@
-#BillChan Blog
+# BillChan Blog
 
-###[View Live BillChan Blog &rarr;](http://chenmingbiao.github.io)
+### [View Live BillChan Blog &rarr;](http://chenmingbiao.github.io)
 
 ![](http://BillChan.me/img/blog-desktop.jpg)
 
