@@ -77,7 +77,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "SwiftGG",
+        title: "SwiftGG 翻译组",
         href: "http://swift.gg/"
     },
     {
