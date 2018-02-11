@@ -3,8 +3,8 @@ title: Cmb Blog
 SEOTitle: 陈明标的博客 | BillChan Blog
 header-img: img/post-bg-miui6.jpg
 email: mbillchan@gmail.com
-description: "关于Web与Swift、php与设计 | 这里是 @BillChan陈明标 的个人博客，与你一起发现更大的世界。"
-keyword: "陈明标, BillChan陈明标, BillChan, @CMB, CMB, @chenmingbiao, chenmingbiao, 陈明标的博客, BillChan Blog, 博客, 个人网站, 互联网, Swift, 设计, 产品, SwiftGG, SwiftGG翻译组, SwiftGG翻译组核心成员"
+description: "关于 iOS 与 PHP | 这里是 @BillChan陈明标 的个人博客，与你一起发现更大的世界。"
+keyword: "陈明标, BillChan陈明标, BillChan, @CMB, CMB, @chenmingbiao, chenmingbiao, 陈明标的博客, BillChan Blog, 博客, 个人网站, 互联网, iOS, Swift, 设计, 产品, SwiftGG, SwiftGG翻译组"
 url: "http://billchan.me"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -60,7 +60,7 @@ ga_domain: chenmingbiao.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "眼看世界"
+sidebar-about-description: "一步一脚印👣"
 sidebar-avatar: /img/avatar-cmb.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
