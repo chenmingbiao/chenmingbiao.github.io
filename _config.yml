@@ -81,11 +81,11 @@ friends: [
         href: "http://swift.gg/"
     },
     {
-        title: "# TODO: saitjr 博客",
+        title: "# TODO: saitjr",
         href: "http://www.saitjr.com/"
     },
     {
-        title: "小锅 SWIFTBITS 博客",
+        title: "小锅 SWIFTBITS",
         href: "http://www.swiftyper.com/"
     },
     {
@@ -95,5 +95,9 @@ friends: [
     {
         title: "Code Build Me",
         href: "http://codebuild.me/"
+    },
+    {
+        title: "Sunnyyoung",
+        href: "https://blog.sunnyyoung.net/"
     }
 ]
