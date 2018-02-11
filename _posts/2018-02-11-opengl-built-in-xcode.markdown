@@ -3,7 +3,7 @@ layout:     post
 title:      "Xcode 中搭建 OpenGL 环境"
 subtitle:   "OpenGL built in Xcode"
 date:       2018-02-11
-header-img: "img/home-bg-art.jpg"
+header-img: "img/post-bg-miui-ux.jpg"
 author:     "CMB"
 tags:
     - OpenGL
