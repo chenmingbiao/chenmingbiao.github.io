@@ -305,8 +305,8 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 ### 参考链接：
 
-1.[Getting Started in OpenGL with GLFW/GLEW in Xcode 6](https://www.youtube.com/watch?v=lTmM3Y8SMOM)
-2.[xcode 配置 glew](https://www.jianshu.com/p/e753b36f79c3)
-3.[Creating an OpenGL 4.1 program with GLEW and GLFW in XCode](http://seaneshbaugh.com/posts/creating-an-opengl-4-1-program-with-glew-and-glfw-in-xcode)
+1. [Getting Started in OpenGL with GLFW/GLEW in Xcode 6](https://www.youtube.com/watch?v=lTmM3Y8SMOM)
+2. [xcode 配置 glew](https://www.jianshu.com/p/e753b36f79c3)
+3. [Creating an OpenGL 4.1 program with GLEW and GLFW in XCode](http://seaneshbaugh.com/posts/creating-an-opengl-4-1-program-with-glew-and-glfw-in-xcode)
 
 最后再次感谢我的导师 Tom 对我的指导，一步一脚印。
