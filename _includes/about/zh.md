@@ -7,6 +7,6 @@ Hey，我是陈明标，地道广州人，目前在深圳。
 
 目前是 [SwiftGG 翻译组](http://swift.gg/) 活跃成员。曾被招募为 [美图公司 · 基础组件架构](https://www.meitu.com/) iOS工程师、[机智云 · 平台事业部](http://www.gizwits.com/) iOS SDK 研发工程师。现为 [腾讯 · 企鹅电竞](http://egame.qq.com/) iOS工程师。
 
-一些作品和开源软件项目，👉 戳 [Github](http://github.com/chenmingbiao)。
+一些作品和开源软件项目，👉 戳 [Github](http://github.com/chenmingbiao) 。
 
 心存善念，必有善行；善念善行，天必佑之。
